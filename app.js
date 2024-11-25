@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
             </head>
             <body>
                 <h1>Hello, How are you?</h1>
-                <h1>CI/CD Demo</h1>
+                <h1>CI/CD Demo using elastic beanstalk</h1>
             </body>
         </html>
     `);
