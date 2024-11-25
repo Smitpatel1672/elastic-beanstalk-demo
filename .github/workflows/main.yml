@@ -29,4 +29,6 @@ jobs:
           environment_name: 'Node-app-demo-env'
           version_label: ${{ github.sha }}
           region: ap-south-1
-          # deployment_package: nodejs-app-build.zip
+          deployment_package: nodejs-app-build.zip
+          use_existing_version_if_available: true
+
