@@ -6,10 +6,11 @@ app.get('/', (req, res) => {
     res.send(`
         <html>
             <head>
-                <title>Hello World</title>
+                <title>CI/CD Demo</title>
             </head>
             <body>
                 <h1>Hello, How are you?</h1>
+                <h1>CI/CD Demo</h1>
             </body>
         </html>
     `);
