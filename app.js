@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
             <body>
                 <h1>Hello, How are you?</h1>
                 <h1>CI/CD Demo using elastic beanstalk</h1>
-                <p>This is node js application - test</p>
+                <p>This is node js application - test v1</p>
             </body>
         </html>
     `);
