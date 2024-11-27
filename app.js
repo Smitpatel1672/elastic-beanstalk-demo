@@ -1,7 +1,5 @@
 const express = require('express');
 const app = express();
-// const fs = require("fs");
-// const path = require("path");
 
 // Set up a simple route 
 app.get('/', (req, res) => {
