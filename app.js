@@ -6,7 +6,7 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
-// Middleware for JSON
+// Middleware for JSON 
 app.use(express.json());
 
 // Set up multer storage for file uploads
