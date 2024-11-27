@@ -17,6 +17,20 @@ app.get('/', (req, res) => {
     `);
 });
 
+app.get('/home', (req, res) => {
+    res.send(`
+        <html>
+            <head>
+                <title>CI/CD Demo 1</title>
+            </head>
+            <body>
+                <h1>Home Page</h1>
+                
+            </body>
+        </html>
+    `);
+});
+
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
