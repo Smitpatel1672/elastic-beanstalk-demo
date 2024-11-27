@@ -70,6 +70,10 @@ app.get("/health", (req, res) => {
   res.status(200).send("OK");
 });
 
+app.get("/", (req, res) => {
+  res.status(200).send("HOME OK");
+});
+
 // Start Server
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
