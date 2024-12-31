@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22 # replace your node version
       - name: Install Dependencies
         run: npm install
       - name: Generate Deployment Package
@@ -25,8 +25,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: test-v1
-          environment_name: Test-v1-env
+          application_name: 'node-app-demo' # replace your application name
+          environment_name: 'Node-app-demo-env' # replace your environment name
           version_label: "${{ github.sha }}-${{ github.run_id }}"
           region: ap-south-1
           deployment_package: nodejs-app-build.zip
