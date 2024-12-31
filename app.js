@@ -3,7 +3,7 @@ const app = express();
 const fs = require("fs");
 const path = require("path");
 const multer = require("multer");
-   
+    
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     const uploadPath = path.join(__dirname, "public/uploads");
