@@ -25,8 +25,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: 'node-app-demo' # replace your application name
-          environment_name: 'Node-app-demo-env' # replace your environment name
+          application_name: 'node-app-v1' # replace your application name
+          environment_name: 'Node-app-v1-env' # replace your environment name
           version_label: "${{ github.sha }}-${{ github.run_id }}"
           region: ap-south-1
           deployment_package: nodejs-app-build.zip
